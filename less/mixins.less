@@ -1,1 +1,29 @@
 // Mixins Here
+.custom-btn(@width: 200px, @bgColor: rgb(17, 17, 87), @fontColor: white ) {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 12px;
+    width: @width !important;
+    background-color: @bgColor;
+    color: @fontColor;
+    justify-content: center;
+    align-items: center;
+    
+      
+    &:hover {
+      background-color: @fontColor;
+      color: @bgColor;
+    }
+}
+
+.nav-style (@FontSize: 13px, @FontColor: rgb(36, 36, 36) ) {
+    padding: 0 15px;
+    font-size: @FontSize;
+    color: @FontColor;
+    text-decoration: none;
+
+}
